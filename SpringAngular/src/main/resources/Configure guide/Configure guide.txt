@@ -1,0 +1,32 @@
+Maven template: 
+ Group Id: org.fluttercode.knappsack
+ Artifact Id: spring-mvc-jpa-archetype
+ 
+Json Mapping:
+=> @RespondBody
+
+ + For old Spring version:
+	 <dependency>  
+		 <groupId>org.codehaus.jackson</groupId>  
+		 <artifactId>jackson-mapper-asl</artifactId>  
+		 <version>1.9.10</version>  
+	</dependency>
+ + For new Spring version: 
+	 <!-- Jackson bind -->        
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-core</artifactId>
+		<version>2.5.0</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-annotations</artifactId>
+		<version>2.5.0</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-databind</artifactId>
+		<version>2.5.0</version>
+	</dependency>
