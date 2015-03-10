@@ -29,8 +29,7 @@ public class HomeController {
 	@RequestMapping(value="addTask", method = RequestMethod.POST)
 	@ResponseBody
 	public int addTask(@RequestBody Task newtask){
-		//test
-		//test2
+		//test1
 		return taskDao.add(newtask);
 	}
 	
