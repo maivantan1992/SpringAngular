@@ -3,12 +3,14 @@ package com.sample.dao.impl;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.sample.dao.HBSpBasicDAO;
 import com.sample.dao.TaskDao;
 import com.sample.entity.Task;
 
 @Repository
+@Transactional
 public class TaskDaoImpl extends HBSpBasicDAO<Task, Integer> implements TaskDao {
 
 	public TaskDaoImpl() {
