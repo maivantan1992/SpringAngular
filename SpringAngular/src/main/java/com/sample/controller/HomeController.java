@@ -30,6 +30,7 @@ public class HomeController {
 	@ResponseBody
 	public int addTask(@RequestBody Task newtask){
 		//test
+		//test2
 		return taskDao.add(newtask);
 	}
 	
